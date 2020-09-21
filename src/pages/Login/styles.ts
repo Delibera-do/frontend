@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 import imgCenter from '../../assets/img_center.jpg';
-import logoYtb from '../../assets/logo_youtube.png';
 
 export const Container = styled.div`
   margin: 0 auto;
@@ -36,6 +35,10 @@ export const ContainerAlign = styled.div`
   justify-content: space-between;
   flex-direction: row;
   margin: 80px 90px 0 90px;
+
+  @media(max-width: 1000px) {
+    flex-direction: column;
+  }
 
 `;
 
@@ -93,6 +96,10 @@ export const DecoratorCenter = styled.div`
   background: url(${imgCenter}) no-repeat center center;
   flex-grow: 1;
   height: 300px;
+
+  @media(max-width: 1280px) {
+    display: none;
+  }
 `;
 
 export const VideoContainer = styled.div`
@@ -100,10 +107,20 @@ export const VideoContainer = styled.div`
   align-items: center;
   flex-direction: column;
 
+  @media(max-width: 1000px) {
+    margin-top: 40px;
+  }
+
   div {
     width: 470px;
     height: 247px;
-    background: #000 url(${logoYtb}) no-repeat center center;
+    border: none;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
   }
 
   p {

@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useCallback } from 'react';
+import { Link, useHistory } from 'react-router-dom';
 
 import Header from '../../components/Header';
 
@@ -17,6 +17,7 @@ import {
 import IcoCalendar from '../../assets/ico_calendar.png';
 
 const Login: React.FC = () => {
+  const history = useHistory();
 
   return (
     <Container>
@@ -28,7 +29,7 @@ const Login: React.FC = () => {
         </DescEvent>
 
         <ContainerAlign>
-          <FormAcess>
+          <FormAcess onSubmit={(e) => history.push('/assembleia')}>
             <DataBut>
               <img src={IcoCalendar} alt="Calendário" />
               <p>DIA 15/09/2020 ÀS 19h</p>
@@ -39,7 +40,13 @@ const Login: React.FC = () => {
           </FormAcess>
           <DecoratorCenter />
           <VideoContainer>
-            <div></div>
+            <div className='embed-container'>
+              <iframe 
+                src='https://www.youtube.com/embed/_0R3YCXCbSk' 
+                title="Video"
+              >
+              </iframe>
+            </div>
             <p>Assista no Youtube</p>
           </VideoContainer>
         </ContainerAlign>
