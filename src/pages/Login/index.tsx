@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 
 import Header from '../../components/Header';
@@ -19,6 +19,11 @@ import IcoCalendar from '../../assets/ico_calendar.png';
 const Login: React.FC = () => {
   const history = useHistory();
 
+  const handleSubmit = useCallback((e) => {
+    e.preventDefault();
+    history.push('/assembleia');
+  }, [history]);
+
   return (
     <Container>
       <Header />
@@ -29,7 +34,7 @@ const Login: React.FC = () => {
         </DescEvent>
 
         <ContainerAlign>
-          <FormAcess onSubmit={(e) => history.push('/assembleia')}>
+          <FormAcess onSubmit={(e) => handleSubmit(e)}>
             <DataBut>
               <img src={IcoCalendar} alt="Calendário" />
               <p>DIA 15/09/2020 ÀS 19h</p>
