@@ -69,12 +69,22 @@ export const FormAcess = styled.form`
     text-align: center;
   }
 
+  button {
+    width: 348px;
+    height: 46px;
+    margin-top: 20px;
+    text-align: center;
+    background: #30B5F2;
+    border-radius: 20px;
+    border: none;
+    color: #FFFFFF;
+  }
+
   a {
     margin-top: 20px;
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
-    text-decoration: none;
   }
 `;
 

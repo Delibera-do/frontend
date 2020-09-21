@@ -41,6 +41,7 @@ const Login: React.FC = () => {
             </DataBut>
             <label htmlFor="code">Informe o seu código de acesso:</label>
             <input type="text" name="code" id="code" placeholder="*************" />
+            <button type="submit">Entrar</button>
             <Link to="/#">Não tenho o código de acesso</Link>
           </FormAcess>
           <DecoratorCenter />
