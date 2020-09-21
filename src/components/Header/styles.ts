@@ -11,9 +11,12 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
 
-
   header {
-    margin-left: 90px;
+    margin-left: 10%;
+
+    @media(max-width: 1000px) {
+      margin: 0 auto;
+    }
   }
 
   h1 {

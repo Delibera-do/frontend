@@ -13,18 +13,22 @@ export const ContainerPanel = styled.div`
 `;
 
 export const DescEvent = styled.div`
-  margin: 70px 0 0 90px;
+  margin: 8% 0 0 10%;
 
   h2 {
     font-weight: 600;
     font-size: 43px;
     line-height: 54px;
+
+    @media(max-width: 1000px) {
+      font-size: 32px;
+      line-height: 36px;
+    }
   }
 
   p {
     color: #777;
   }
-
 `;
 
 export const ContainerAlign = styled.div`
@@ -32,7 +36,7 @@ export const ContainerAlign = styled.div`
   align-content: center;
   justify-content: space-between;
   flex-direction: row;
-  margin: 20px 90px 0 90px;
+  margin: 20px 10% 0 10%;
 
   @media(max-width: 1000px) {
     flex-direction: column;
@@ -42,11 +46,19 @@ export const ContainerAlign = styled.div`
 export const VideoPanel = styled.div`
   width: 60%;
 
+  @media(max-width: 1000px) {
+    width: 100%;
+  }
+
  .embed-container{
   margin: 25px 0;
   border: none;
   width: 100%;
   height: 28vw;
+
+  @media(max-width: 1000px) {
+    height: 100%;
+  }
 
    iframe {
     border: none;
@@ -95,6 +107,11 @@ export const BtnAsk = styled.div`
   font-weight: bold;
   line-height: 23px;
   color: #FFFFFF;
+
+  @media(max-width: 1000px) {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
 `;
 
 export const DataBut = styled.div`
@@ -118,6 +135,11 @@ export const DataBut = styled.div`
 export const ChatPanel = styled.div`
   width: 35%;
 
+  @media(max-width: 1000px) {
+    width: 100%;
+    margin-top: 30px;
+  }
+
   .links {
     text-align: center;
     padding: 6px 30px;
@@ -132,6 +154,10 @@ export const ChatPanelContent = styled.div`
   height: 28vw;
   padding: 5%;
   margin: 25px 0;
+
+  @media(max-width: 1000px) {
+    height: 100%;
+  }
 
   border: solid 3px #B3B0B0;
   border-left: solid 6px #B3B0B0;

@@ -15,18 +15,22 @@ export const ContainerPanel = styled.div`
 `;
 
 export const DescEvent = styled.div`
-  margin: 70px 0 0 90px;
+  margin: 8% 0 0 10%;
 
   h2 {
     font-weight: 600;
     font-size: 43px;
     line-height: 54px;
+
+    @media(max-width: 1000px) {
+      font-size: 32px;
+      line-height: 36px;
+    }
   }
 
   p {
     color: #777;
   }
-
 `;
 
 export const ContainerAlign = styled.div`
@@ -34,12 +38,12 @@ export const ContainerAlign = styled.div`
   align-content: center;
   justify-content: space-between;
   flex-direction: row;
-  margin: 80px 90px 0 90px;
+  margin: 80px 10% 0 10%;
 
   @media(max-width: 1000px) {
     flex-direction: column;
+    margin: 40px 20px 0 20px;
   }
-
 `;
 
 export const FormAcess = styled.form`
@@ -72,7 +76,6 @@ export const FormAcess = styled.form`
     line-height: 20px;
     text-decoration: none;
   }
-
 `;
 
 export const DataBut = styled.div`
