@@ -10,6 +10,10 @@ export const ContainerPanel = styled.div`
   align-content: center;
   flex-direction: column;
   padding: 10px 20px;
+
+  @media(max-width: 1000px) {
+    padding: 10px 0;
+  }
 `;
 
 export const DescEvent = styled.div`
@@ -41,6 +45,10 @@ export const ContainerAlign = styled.div`
   @media(max-width: 1000px) {
     flex-direction: column;
   }
+
+  @media(max-width: 1000px) {
+    margin: 20px 2% 0 2%;
+  }
 `;
 
 export const VideoPanel = styled.div`
@@ -71,6 +79,10 @@ export const VideoPanel = styled.div`
    display: flex;
    align-items: center;
    justify-content: space-between;
+
+  @media(max-width: 370px) {
+    flex-direction: column;
+  }
  }
 
 `;
@@ -89,6 +101,10 @@ export const BtnTime = styled.div`
   height: 40px;
   background: #E7E4E4;
   border-radius: 20px;
+
+  @media(max-width: 670px) {
+    font-size: 12px;
+  }
 `;
 
 export const BtnAsk = styled.div`
@@ -112,6 +128,12 @@ export const BtnAsk = styled.div`
     font-size: 16px;
     padding: 10px 20px;
   }
+
+  @media(max-width: 670px) {
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 10px 20px;
+  }
 `;
 
 export const DataBut = styled.div`
@@ -128,8 +150,11 @@ export const DataBut = styled.div`
     font-size: 22px;
     line-height: 28px;
     color: #FFFFFF;
-  }
 
+    @media(max-width: 1000px) {
+      font-size: 16px;
+    }
+  }
 `;
 
 export const ChatPanel = styled.div`
@@ -145,6 +170,14 @@ export const ChatPanel = styled.div`
     padding: 6px 30px;
     font-size: 18px;
     line-height: 23px;
+
+    @media(max-width: 770px) {
+      font-size: 16px;
+    }
+
+    @media(max-width: 470px) {
+      font-size: 14px;
+    }
   }
 
 `;
@@ -168,6 +201,10 @@ export const ChatPanelContent = styled.div`
     font-size: 24px;
     margin-bottom: 5%;
     font-weight: bold;
+
+      @media(max-width: 800px) {
+        font-size: 18px;
+      }
   }
 
   div {
@@ -177,12 +214,20 @@ export const ChatPanelContent = styled.div`
       font-weight: 600;
       font-size: 24px;
       line-height: 30px;
+
+      @media(max-width: 800px) {
+        font-size: 16px;
+      }
     }
 
     span {
       font-weight: normal;
       font-size: 18px;
       line-height: 23px;
+
+      @media(max-width: 800px) {
+        font-size: 14px;
+      }
     }
 
     a {
@@ -196,6 +241,10 @@ export const ChatPanelContent = styled.div`
       font-size: 14px;
       line-height: 18px;
       color: #FFFFFF;
+
+      @media(max-width: 800px) {
+        font-size: 12px;
+      }
     }
 
     a:hover {
